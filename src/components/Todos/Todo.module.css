@@ -1,0 +1,94 @@
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #555;
+  color: #112d49;
+  background-color: #fbfef9;
+}
+
+.todoText {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.todoIcon {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: teal;
+}
+
+.completedTodo {
+  background-color: unset;
+  border-color: gray;
+  color: gray;
+}
+
+.todo.completedTodo .todoIcon,
+.todo.completedTodo .checkIcon,
+.todo.completedTodo .deleteIcon {
+  color: gray;
+}
+
+.checkIcon,
+.deleteIcon {
+  cursor: pointer;
+  color: lightgrey;
+  padding: 0 7px;
+  font-size: 2.9rem;
+  transition: transform 0.3s;
+}
+
+.checkIcon:hover,
+.deleteIcon:hover {
+  cursor: pointer;
+}
+
+.checkIcon:hover {
+  color: green;
+}
+
+.deleteIcon:hover {
+  color: red;
+}
+.textStyle {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.inputStyle {
+  color: transparent;
+}
+.inputStyle::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.inputStyle::before {
+  content: 'Файл не выбран';
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.inputStyle:hover::before {
+  border-color: black;
+}
+.inputStyle:active {
+  outline: 0;
+}
+.inputStyle::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
